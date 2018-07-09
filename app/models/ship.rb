@@ -11,7 +11,7 @@ class Ship
   #   SHIPS << self
   # end
 
-  def initialize(args)
+  def initialize(params)
     @name_1 = args[:pirate][:ships][0][:name]
     @type_1 = args[:pirate][:ships][0][:type]
     @booty_1 = args[:pirate][:ships][0][:booty]
