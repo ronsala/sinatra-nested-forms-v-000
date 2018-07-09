@@ -1,6 +1,7 @@
 <h1>Create Pirates and Ships</h1>
 <h2>Pirate</h2>
 <form action="/pirates" method="post">
+  <label for="p_name">Name:</label>
   Pirate Name: <input type="text" id="p_name" name="pirate[name]">
   Pirate Weight: <input type="text" d="p_weight" name="pirate[weight]">
   Pirate Height: <input type="text" d="p_height" name="pirate[height]">
@@ -19,5 +20,9 @@
   Ship Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]">
   Ship Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]">
   Ship Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
-  <input id="submit" type="Submit">
+  <br>
+  <!-- <input id="Submit" type="Submit" name="Submit"> -->
+  <!-- <input id="Submit" type="Submit" value="Submit"> -->
+  <!-- <input type="submit" id="submit"> -->
+  <input type="submit" id="submit" title="Submit">
 </form>
