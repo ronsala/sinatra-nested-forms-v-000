@@ -15,6 +15,9 @@ class Ship
     @name_1 = args[:pirate][:ships][0][:name]
     @type_1 = args[:pirate][:ships][0][:type]
     @booty_1 = args[:pirate][:ships][0][:booty]
+    @name_2 = args[:pirate][:ships][1][:name]
+    @type_2 = args[:pirate][:ships][1][:type]
+    @booty_2 = args[:pirate][:ships][1][:booty]
     SHIPS << self
   end
 
