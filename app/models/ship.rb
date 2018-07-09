@@ -12,12 +12,12 @@ class Ship
   # end
 
   def initialize(params)
-    @name_1 = args[:pirate][:ships][0][:name]
-    @type_1 = args[:pirate][:ships][0][:type]
-    @booty_1 = args[:pirate][:ships][0][:booty]
-    @name_2 = args[:pirate][:ships][1][:name]
-    @type_2 = args[:pirate][:ships][1][:type]
-    @booty_2 = args[:pirate][:ships][1][:booty]
+    @name_1 = params[:pirate][:ships][0][:name]
+    @type_1 = params[:pirate][:ships][0][:type]
+    @booty_1 = params[:pirate][:ships][0][:booty]
+    @name_2 = params[:pirate][:ships][1][:name]
+    @type_2 = params[:pirate][:ships][1][:type]
+    @booty_2 = params[:pirate][:ships][1][:booty]
     SHIPS << self
   end
 
