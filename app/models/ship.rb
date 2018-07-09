@@ -3,18 +3,10 @@ class Ship
 
   SHIPS = []
 
-  # def initialize(params)
-  #   @name = params[:pirate][:name]
-  #   @weight = params[:pirate][:weight]
-  #   @height = params[:pirate][:height]
-  #   @ships = params[:pirate][:ships]
-  #   SHIPS << self
-  # end
-
-  def initialize(args)
-    @name = args[:pirate][:ships][:name]
-    @name = args[:pirate][:ships][:type]
-    @name = args[:pirate][:ships][:booty]
+  def initialize(ship)
+    @name = ship[:name]
+    @type = ship[:type]
+    @booty = ship[:booty]
     SHIPS << self
   end
 

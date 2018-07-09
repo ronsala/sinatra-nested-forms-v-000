@@ -1,7 +1,6 @@
 class Pirate
-  attr_accessor :name, :weight, :height, :ships
+  attr_accessor :name, :weight, :height, :ships, :ship_1, :ship_2
 
-  # @@all = []
   PIRATES = []
 
 
@@ -9,7 +8,8 @@ class Pirate
     @name = params[:pirate][:name]
     @weight = params[:pirate][:weight]
     @height = params[:pirate][:height]
-    @ships = params[:pirate][:ships]
+    @ship_1 = params[:pirate][:ships][0][:name]
+    @ship_2 = params[:pirate][:ships][1][:name]
     PIRATES << self
   end
 
