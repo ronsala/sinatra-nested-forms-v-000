@@ -13,6 +13,7 @@ class Ship
 
   def initialize(params)
     @name_1 = params[:pirate][:ships][0][:name]
+    binding.pry
     @type_1 = params[:pirate][:ships][0][:type]
     @booty_1 = params[:pirate][:ships][0][:booty]
     @name_2 = params[:pirate][:ships][1][:name]
